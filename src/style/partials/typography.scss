@@ -1,0 +1,62 @@
+h1,
+.h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+p {
+  margin: 0 0 15px;
+}
+.middle{
+	display: inline-block;
+	vertical-align: middle;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+dt,
+dd {
+  line-height: 1.42857143;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0;
+}
