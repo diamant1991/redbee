@@ -42,6 +42,24 @@ $('#services-carousel').owlCarousel({
     }
   }
 })
+$('#about-carousel').owlCarousel({
+  loop:true,
+  margin: 30,
+  nav:true,
+  navText: ["<div class='carousel-btn carousel-btn--prev'><i class='fa fa-long-arrow-left'></i>предыдущие</div>", 
+            "<div class='carousel-btn carousel-btn--next'>следующие<i class='fa fa-long-arrow-right'></i></div>"],
+  responsive:{
+    0:{
+        items:1
+    },
+    767:{
+        items:2
+    },
+    1199:{
+        items:3
+    }
+  }
+})
 $('.review__carousel').owlCarousel({
   loop:true,
   margin: 0,
@@ -54,3 +72,7 @@ $('.review__carousel').owlCarousel({
     }
   }
 })
+$('.schema__floor').click(function(e) {
+  $('.schema__floor').removeClass('active')
+  $(this).addClass('active')
+});

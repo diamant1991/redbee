@@ -42,12 +42,7 @@
   background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: 6px;
   outline: 0;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
 .modal-backdrop {
   position: fixed;
@@ -76,6 +71,6 @@
 @media (min-width: 768px) {
   .modal-dialog {
     width: 600px;
-    margin: 30px auto;
+    margin: 60px auto;
   }
 }
