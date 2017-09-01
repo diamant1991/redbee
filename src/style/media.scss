@@ -59,6 +59,10 @@
 	.about-size__text{
 		font-size: 30px;
 	}
+	.treners-info__item{
+		margin-bottom: 0;
+		margin-top: 25px;
+	}
 	.schema__header__item{
 		display: block;
 	}
@@ -122,11 +126,24 @@
 	.hidden-xs{
 		display: none;
 	}
+	.page-text{
+		img[align="right"]{
+			margin-left: 0;
+			float: none;
+		}
+		img[align="left"]{
+			margin-right: 0;
+			float: none;
+		}
+	}
 	.product__text{
 		position: relative;
 	}
 	.about-size__content{
 		text-align: center;
+	}
+	.treners__descr{
+		padding: 15px;
 	}
 	.schema__header__item{
 		text-align: center;
@@ -138,6 +155,12 @@
 		display: block;
 		margin-right: 0;
 		margin-bottom: 10px;
+	}
+	.page-text table thead{
+		font-size: 14px;
+	}
+	.page-text table td{
+		font-size: 14px;
 	}
 	.schema__floor{
 		font-size: 16px;
@@ -314,5 +337,17 @@
 	}
 	.phone{
 		margin-top: 15px;
+	}
+	.col-12{
+		width: 100%;
+	}
+	.aqua__header{
+		text-align: center;
+	}
+	.black-link{
+		margin: 5px !important;
+	}
+	.aqua-build__name{
+		font-size: 20px;
 	}
 }

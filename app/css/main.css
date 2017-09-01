@@ -728,7 +728,9 @@ ul.bxslider {
 @media (min-width: 768px) {
   .modal-dialog {
     width: 600px;
-    margin: 60px auto; } }
+    margin: 60px auto; }
+  .modal-dialog--small {
+    width: 370px; } }
 
 .fancybox-wrap,
 .fancybox-skin,
@@ -1170,6 +1172,12 @@ img {
     box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.2); }
     .btn--submit:hover {
       background: #ef3737; }
+  .btn-white {
+    border-color: #fff;
+    color: #fff; }
+    .btn-white:hover {
+      background: #fff;
+      color: #000; }
 
 .services {
   margin-bottom: 55px; }
@@ -1211,8 +1219,7 @@ img {
 
 .feedback {
   padding: 30px 0;
-  background: #fafafa;
-  margin-bottom: 60px; }
+  background: #fafafa; }
   .feedback__title {
     font-size: 28px;
     color: #000;
@@ -1240,7 +1247,7 @@ img {
     height: 354px; }
 
 .product {
-  margin-bottom: 60px; }
+  margin: 60px 0; }
   .product__text {
     position: absolute;
     z-index: 2;
@@ -1638,6 +1645,7 @@ img[align="left"] {
       padding-left: 10px; }
 
 .location {
+  margin-top: 60px;
   padding-bottom: 50px; }
 
 .link-arrow {
@@ -1714,6 +1722,33 @@ img[align="left"] {
   font-size: 15px;
   line-height: 1.5;
   color: #666666; }
+  .page-text img[align="right"] {
+    margin-left: 20px;
+    margin-bottom: 10px; }
+  .page-text img[align="left"] {
+    margin-right: 20px;
+    margin-bottom: 10px; }
+  .page-text p,
+  .page-text table,
+  .page-text ol,
+  .page-text ul {
+    margin-bottom: 25px; }
+  .page-text ul li {
+    position: relative;
+    padding-left: 25px; }
+    .page-text ul li + li {
+      margin-top: 10px; }
+    .page-text ul li:before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      left: 10px;
+      top: 10px;
+      width: 4px;
+      height: 4px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: #666666; }
   .page-text h1 {
     font-size: 35px;
     font-family: "AkrobatBold";
@@ -1734,3 +1769,225 @@ img[align="left"] {
     font-size: 15px;
     color: #333;
     font-family: "NotoSansBold"; }
+  .page-text table {
+    width: 100%; }
+    .page-text table thead {
+      font-size: 20px;
+      font-family: "AkrobatBold";
+      color: #333; }
+      .page-text table thead td {
+        background: #fafafa; }
+    .page-text table td {
+      vertical-align: middle;
+      text-align: center;
+      padding: 25px 5px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+
+.treners__item {
+  position: relative;
+  height: 240px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-bottom: 30px; }
+  .treners__item:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4); }
+
+.treners__descr {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 30px; }
+
+.treners__name {
+  font-size: 20px;
+  font-family: "AkrobatBold";
+  margin-bottom: 10px; }
+
+.treners__status {
+  font-size: 13px; }
+
+.treners-carousel {
+  text-align: center; }
+
+.treners-info__item {
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 35px; }
+  .treners-info__item b {
+    display: block; }
+
+.treners-info__icon {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 2px; }
+
+.vacancy__header {
+  padding: 15px 0;
+  font-size: 20px;
+  font-family: "AkrobatBold";
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  color: #f36666; }
+
+.vacancy__item:nth-child(2n) {
+  background: #fafafa; }
+  .vacancy__item:nth-child(2n) .vacancy__header {
+    color: #333; }
+
+.vacancy__content {
+  padding-top: 15px;
+  display: none; }
+
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  color: #f36666;
+  width: 100%;
+  height: 30px;
+  font-family: "AkrobatSemiBold";
+  text-align: left;
+  font-weight: normal;
+  font-size: 17px;
+  text-transform: uppercase; }
+  .file-upload .fa {
+    font-size: 22px; }
+
+.file-upload input[type="file"] {
+  display: none; }
+
+.file-upload label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer; }
+
+.filename {
+  background: #fff;
+  border: 0;
+  font-size: 15px;
+  color: #999999;
+  padding-left: 21px; }
+
+.bg-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%; }
+
+.aqua {
+  margin-bottom: 55px; }
+  .aqua__header {
+    margin-bottom: 25px; }
+  .aqua-build {
+    margin-bottom: 30px; }
+    .aqua-build__info {
+      color: #fff;
+      font-size: 15px;
+      font-family: "NotoSansBold";
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 25px; }
+      .aqua-build__info > div {
+        margin-bottom: 25px; }
+    .aqua-build__item {
+      height: 230px;
+      position: relative; }
+      .aqua-build__item:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); }
+    .aqua-build__name {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      padding: 25px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 25px;
+      font-family: "AkrobatBold"; }
+  .aqua-group__item {
+    height: 330px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    .aqua-group__item:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+    .aqua-group__item:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); }
+  .aqua-group__name {
+    color: #fff;
+    font-size: 22px;
+    font-family: "AkrobatBold";
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 25px; }
+
+.treners__item--pad {
+  margin-bottom: 0 !important; }
+
+.photo-carousel {
+  padding-top: 30px; }
+
+.black-link {
+  color: #333333;
+  font-size: 15px; }
+  .black-link + .black-link {
+    margin-left: 25px; }
+  .black-link:hover .black-link__text {
+    text-decoration: none; }
+  .black-link__text {
+    text-decoration: underline; }
+  .black-link img {
+    vertical-align: middle; }
+
+.calendar {
+  text-align: center;
+  color: #fff;
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover; }
+  .calendar__icon {
+    font-size: 30px;
+    margin-bottom: 25px; }
+  .calendar__text {
+    font-size: 15px;
+    margin-bottom: 25px; }

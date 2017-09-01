@@ -11,6 +11,25 @@ $('.navbar-toggle').click(function(e) {
   }
 });
 
+$('.vacancy__header').click(function() {
+  var vcontent = $(this).next()
+  var fa = $(this).find('.fa')
+  if(vcontent.is(":hidden")){
+    $('.vacancy__content').slideUp(250)
+    vcontent.slideDown(250)
+    fa.removeClass('fa-long-arrow-down').addClass('fa-long-arrow-up')
+  }
+  else{
+    vcontent.slideUp(250)
+    fa.removeClass('fa-long-arrow-up').addClass('fa-long-arrow-down')
+  }
+});
+
+$(".file-upload input[type=file]").change(function(){
+   var filename = $(this).val().replace(/.*\\/, "");
+   $("#filename").val(filename);
+});
+
 $('#main-slider').owlCarousel({
   loop:true,
   margin: 0,
@@ -39,6 +58,18 @@ $('#services-carousel').owlCarousel({
     },
     1199:{
         items:4
+    }
+  }
+})
+$('#treners-carousel').owlCarousel({
+  loop:true,
+  margin: 0,
+  nav:true,
+  navText: ["<div class='carousel-btn carousel-btn--prev'><i class='fa fa-long-arrow-left'></i></div>", 
+            "<div class='carousel-btn carousel-btn--next'><i class='fa fa-long-arrow-right'></i></div>"],
+  responsive:{
+    0:{
+        items:1
     }
   }
 })

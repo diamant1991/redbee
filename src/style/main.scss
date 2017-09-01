@@ -192,6 +192,15 @@ img{
 			background: darken($red, 10%);
 		}
 	}
+	&-white{
+		border-color: #fff;
+		color: #fff;
+
+		&:hover{
+			background: #fff;
+			color: #000;
+		}
+	}
 
 }
 .services{
@@ -242,7 +251,6 @@ img{
 .feedback{
 	padding: 30px 0;
 	background: #fafafa;
-	margin-bottom: 60px;
 
 	&__title{
 		font-size: 28px;
@@ -277,7 +285,7 @@ img{
 	}
 }
 .product{
-	margin-bottom: 60px;
+	margin: 60px 0;
 
 	&__text{
 		position: absolute;
@@ -791,6 +799,7 @@ img[align="left"]{
 	}
 }
 .location{
+	margin-top: 60px;
 	padding-bottom: 50px;
 }
 .link-arrow{
@@ -884,7 +893,43 @@ img[align="left"]{
 	font-size: 15px;
 	line-height: 1.5;
 	color: #666666;
-	
+
+	img[align="right"]{
+		margin-left: 20px;
+		margin-bottom: 10px;
+	}
+	img[align="left"]{
+		margin-right: 20px;
+		margin-bottom: 10px;
+	}
+	p,
+	table,
+	ol,
+	ul{
+		margin-bottom: 25px;
+	}
+	ul{
+		li{
+			position: relative;
+			padding-left: 25px;
+
+			 + li{
+			 	margin-top: 10px;
+			 }
+
+			&:before{
+				content: "";
+				position: absolute;
+				z-index: 2;
+				left: 10px;
+				top: 10px;
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				background: #666666;
+			}
+		}
+	}
 	h1{
 		font-size: 35px;
 		font-family: $abold;
@@ -909,5 +954,278 @@ img[align="left"]{
 		font-size: 15px;
 		color: #333;
 		font-family: $bold;
+	}
+	table{
+		width: 100%;
+
+		thead{
+			font-size: 20px;
+			font-family: $abold;
+			color: #333;
+
+			td{
+				background: #fafafa;
+			}
+		}
+
+		td{
+			vertical-align: middle;
+			text-align: center;
+			padding: 25px 5px;
+			border-bottom: 1px solid rgba(0,0,0,0.05);
+		}
+	}
+}
+.treners{
+	&__item{
+		position: relative;
+		height: 240px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		margin-bottom: 30px;
+
+		&:before{
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			background: rgba(0,0,0,0.4);
+		}
+	}
+	&__descr{
+		position: absolute;
+		z-index: 2;
+		color: #fff;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		padding: 30px;
+	}
+	&__name{
+		font-size: 20px;
+		font-family: $abold;
+		margin-bottom: 10px;
+	}
+	&__status{
+		font-size: 13px;
+	}
+}
+.treners-carousel{
+	text-align: center;
+}
+.treners-info{
+	&__item{
+		margin-bottom: 25px;
+		position: relative;
+		padding-left: 35px;
+
+		b{
+			display: block;
+		}
+	}
+	&__icon{
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		top: 2px;
+	}
+}
+.vacancy{
+	&__header{
+		padding: 15px 0;
+		font-size: 20px;
+		font-family: $abold;
+		cursor: pointer;
+		box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+		color: $red;
+	}
+	&__item{
+		&:nth-child(2n){
+			background: #fafafa;
+
+			.vacancy__header{
+				color: #333;
+			}
+		}
+	}
+	&__content{
+		padding-top: 15px;
+		display: none;
+	}
+}
+.file-upload {
+ position: relative; 
+ overflow: hidden;  
+ color: $red;
+ width: 100%;
+ height: 30px;
+ font-family: $asemibold;
+ text-align: left;
+ font-weight: normal;
+ font-size: 17px;
+ text-transform: uppercase;
+
+ .fa{
+ 	font-size: 22px;
+ }
+}
+.file-upload input[type="file"]{
+    display: none; 
+}
+.file-upload label {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+}
+.filename {
+	background: #fff;
+	border: 0;
+	font-size: 15px;
+	color: #999999;
+	padding-left: 21px;
+}
+.bg-item{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+}
+.aqua{
+	margin-bottom: 55px;
+
+	&__header{
+		margin-bottom: 25px;
+	}
+
+	&-build{
+		margin-bottom: 30px;
+
+		&__info{
+			color: #fff;
+			font-size: 15px;
+			font-family: $bold;
+			position: absolute;
+			z-index: 2;
+			left: 0;
+			top: 0;
+			width: 100%;
+			padding: 25px;
+
+			> div{
+				margin-bottom: 25px;
+			}
+		}
+		&__item{
+			height: 230px;
+			position: relative;
+
+			&:before{
+				content: "";
+				display: block;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			  background: rgba(0,0,0,0.4);
+			}
+		}
+		&__name{
+			position: absolute;
+			z-index: 2;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			padding: 25px;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 25px;
+			font-family: $abold;
+		}
+	}
+	&-group{
+		&__item{
+			height: 330px;
+			transition: 0.5s;
+
+			&:hover{
+				transform: scale(1.1);
+			}
+
+			&:before{
+				content: "";
+				display: block;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			  background: rgba(0,0,0,0.4);
+			}
+		}
+		&__name{
+			color: #fff;
+			font-size: 22px;
+			font-family: $abold;
+			text-transform: uppercase;
+			position: absolute;
+			z-index: 2;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			padding: 25px;
+		}
+	}
+}
+.treners__item--pad{
+	margin-bottom: 0 !important;
+}
+.photo-carousel{
+	padding-top: 30px;
+}
+.black-link{
+	color: #333333;
+	font-size: 15px;
+
+	+ .black-link{
+		margin-left: 25px;
+	}
+
+	&:hover{
+		.black-link__text{
+			text-decoration: none;
+		}
+	}
+
+	&__text{
+		text-decoration: underline;
+	}
+	img{
+		vertical-align: middle;
+	}
+}
+.calendar{
+	text-align: center;
+	color: #fff;
+	height: 380px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+
+	&__icon{
+		font-size: 30px;
+		margin-bottom: 25px;
+	}
+	&__text{
+		font-size: 15px;
+		margin-bottom: 25px;
 	}
 }
