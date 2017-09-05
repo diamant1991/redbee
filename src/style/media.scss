@@ -23,6 +23,9 @@
 	.visible-sm{
 		display: none;
 	}
+	.feedback__title{
+		width: 270px;
+	}
 	.nav__menu{
 		li{
 			&.current,
@@ -334,6 +337,14 @@
 	.top-panel__contacts > div{
 		display: inline-block;
 		vertical-align: middle;
+	}
+	.modal-content{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.services-group__descr,
+	.services-group__text{
+		height: auto !important;
 	}
 	.phone{
 		margin-top: 15px;

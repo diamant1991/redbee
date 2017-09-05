@@ -201,6 +201,11 @@ img{
 			color: #000;
 		}
 	}
+	&-full{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
 
 }
 .services{
@@ -254,9 +259,13 @@ img{
 
 	&__title{
 		font-size: 28px;
+		font-family: $aregular;
 		color: #000;
-		font-family: $abold;
 		line-height: 1;
+
+		&-regular{
+			font-family: $aregular;
+		}
 	}
 	&__group{
 		width: 22%;
@@ -977,6 +986,11 @@ img[align="left"]{
 	}
 }
 .treners{
+
+	&-inner{
+		padding-top: 55px;
+	}
+
 	&__item{
 		position: relative;
 		height: 240px;
@@ -1228,4 +1242,48 @@ img[align="left"]{
 		font-size: 15px;
 		margin-bottom: 25px;
 	}
+}
+.services-group{
+	ul{
+		margin-top: 15px;
+
+		li{
+			+ li{
+				margin-top: 5px;
+			}
+		}
+	}
+
+	&__img{
+		position: relative;
+		height: 200px;
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+	}
+	&__name{
+		color: #fff;
+		position: absolute;
+		z-index: 2;
+		padding: 25px;
+		width: 100%;
+		bottom: 0;
+		text-transform: uppercase;
+		font-size: 22px;
+		font-family: $asemibold;
+	}
+	&__descr{
+		padding: 25px;
+		border: 2px solid #f6f6f6;
+		margin-bottom: 30px;
+	}
+	&__list{
+		margin-bottom: 30px;
+	}
+	&__text{
+		margin-bottom: 50px;
+	}
+}
+.seo-text{
+	margin-top: 55px;
 }

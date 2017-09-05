@@ -1178,6 +1178,10 @@ img {
     .btn-white:hover {
       background: #fff;
       color: #000; }
+  .btn-full {
+    display: block;
+    width: 100%;
+    text-align: center; }
 
 .services {
   margin-bottom: 55px; }
@@ -1222,9 +1226,11 @@ img {
   background: #fafafa; }
   .feedback__title {
     font-size: 28px;
+    font-family: "AkrobatRegular";
     color: #000;
-    font-family: "AkrobatBold";
     line-height: 1; }
+    .feedback__title-regular {
+      font-family: "AkrobatRegular"; }
   .feedback__group {
     width: 22%; }
 
@@ -1783,6 +1789,9 @@ img[align="left"] {
       padding: 25px 5px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
 
+.treners-inner {
+  padding-top: 55px; }
+
 .treners__item {
   position: relative;
   height: 240px;
@@ -1991,3 +2000,40 @@ img[align="left"] {
   .calendar__text {
     font-size: 15px;
     margin-bottom: 25px; }
+
+.services-group ul {
+  margin-top: 15px; }
+  .services-group ul li + li {
+    margin-top: 5px; }
+
+.services-group__img {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat; }
+
+.services-group__name {
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  padding: 25px;
+  width: 100%;
+  bottom: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: "AkrobatSemiBold"; }
+
+.services-group__descr {
+  padding: 25px;
+  border: 2px solid #f6f6f6;
+  margin-bottom: 30px; }
+
+.services-group__list {
+  margin-bottom: 30px; }
+
+.services-group__text {
+  margin-bottom: 50px; }
+
+.seo-text {
+  margin-top: 55px; }

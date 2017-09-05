@@ -14,6 +14,8 @@
 @media (min-width: 992px) {
   .visible-sm {
     display: none; }
+  .feedback__title {
+    width: 270px; }
   .nav__menu li.current a, .nav__menu li:hover a {
     color: #f36666; }
     .nav__menu li.current a:before, .nav__menu li:hover a:before {
@@ -224,6 +226,12 @@
   .top-panel__contacts > div {
     display: inline-block;
     vertical-align: middle; }
+  .modal-content {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .services-group__descr,
+  .services-group__text {
+    height: auto !important; }
   .phone {
     margin-top: 15px; }
   .col-12 {

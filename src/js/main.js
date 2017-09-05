@@ -44,8 +44,8 @@ $('#services-carousel').owlCarousel({
   loop:true,
   margin: 20,
   nav:true,
-  navText: ["<div class='carousel-btn carousel-btn--prev'><i class='fa fa-long-arrow-left'></i>предыдущие</div>", 
-            "<div class='carousel-btn carousel-btn--next'>следующие<i class='fa fa-long-arrow-right'></i></div>"],
+  navText: ["<div class='carousel-btn carousel-btn--prev'><i class='fa fa-long-arrow-left'></i><span class='middle'>предыдущие</span></div>", 
+            "<div class='carousel-btn carousel-btn--next'><span class='middle'>следующие</span><i class='fa fa-long-arrow-right'></i></div>"],
   responsive:{
     0:{
         items:1
@@ -77,8 +77,8 @@ $('#about-carousel').owlCarousel({
   loop:true,
   margin: 30,
   nav:true,
-  navText: ["<div class='carousel-btn carousel-btn--prev'><i class='fa fa-long-arrow-left'></i>предыдущие</div>", 
-            "<div class='carousel-btn carousel-btn--next'>следующие<i class='fa fa-long-arrow-right'></i></div>"],
+  navText: ["<div class='carousel-btn carousel-btn--prev'><i class='fa fa-long-arrow-left'></i><span class='middle'>предыдущие</span></div>", 
+            "<div class='carousel-btn carousel-btn--next'><span class='middle'>следующие</span><i class='fa fa-long-arrow-right'></i></div>"],
   responsive:{
     0:{
         items:1
@@ -95,8 +95,8 @@ $('.review__carousel').owlCarousel({
   loop:true,
   margin: 0,
   nav:true,
-  navText: ["<div class='carousel-btn carousel-btn--prev'><i class='fa fa-long-arrow-left'></i>предыдущий</div>", 
-            "<div class='carousel-btn carousel-btn--next'>следующий<i class='fa fa-long-arrow-right'></i></div>"],
+  navText: ["<div class='carousel-btn carousel-btn--prev'><i class='fa fa-long-arrow-left'></i><span class='middle'>предыдущий</span></div>", 
+            "<div class='carousel-btn carousel-btn--next'><span class='middle'>следующий</span><i class='fa fa-long-arrow-right'></i></div>"],
   responsive:{
     0:{
         items:1
@@ -107,3 +107,15 @@ $('.schema__floor').click(function(e) {
   $('.schema__floor').removeClass('active')
   $(this).addClass('active')
 });
+
+$.fn.equivalent = function (){
+  var $blocks = $(this),
+      maxH    = $blocks.eq(0).height(); 
+  $blocks.each(function(){
+      maxH = ( $(this).height() > maxH ) ? $(this).height() : maxH;
+  });
+
+  $blocks.height(maxH + 20); 
+}
+$('.services-group__descr').equivalent();
+$('.services-group__text').equivalent();
