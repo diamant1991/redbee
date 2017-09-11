@@ -119,3 +119,13 @@ $.fn.equivalent = function (){
 }
 $('.services-group__descr').equivalent();
 $('.services-group__text').equivalent();
+
+$( function() {
+  $( "#datepicker" ).datepicker({
+    showOn: "button",
+    buttonImage: "../img/datepicker.png",
+    buttonImageOnly: true,
+    minDate: 0,
+    buttonText: "Select date"
+  });
+} );

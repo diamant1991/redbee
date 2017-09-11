@@ -18,6 +18,9 @@
 	.schema__header__item + .schema__header__item{
 		margin-left: 20px;
 	}
+	.feedback-event-form{
+		width: 560px;
+	}
 }
 @media(min-width: 992px){
 	.visible-sm{
@@ -52,6 +55,11 @@
 @media(max-width: 991px){
 	.hidden-sm{
 		display: none;
+	}
+	.feedback-event-form{
+		width: 100%;
+		padding: 20px 0 !important;
+		margin-left: 0;
 	}
 	.main-slider__text{
 		height: auto;

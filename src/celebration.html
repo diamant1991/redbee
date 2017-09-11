@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Праздники и мероприятия</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+  <![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    //= template/header.html
+    <div class="content">
+      <div class="container">
+        <ul class="breadcrumb clearfix">
+          <li>
+            <a href="#" class="middle">Главная</a>
+            <span class="middle breadcrumb__delimiter">»</span>
+          </li>
+          <li>
+            <span class="middle">Активный пункт</span>
+          </li> 
+        </ul>
+        <h1 class="page-title">Праздники и мероприятия</h1>
+        <div class="aqua clearfix">
+          <div class="aqua-group clearifx">
+            <div class="col-md-3 col-sm-6">
+              <div class="row">
+                <div class="aqua-group__item bg-item" style="background-image: url(http://via.placeholder.com/300x330)">
+                  <div class="aqua-group__name">
+                  деловые <br>мероприятия</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="row">
+                <div class="aqua-group__item bg-item" style="background-image: url(http://via.placeholder.com/300x330)">
+                  <div class="aqua-group__name">
+                    корпоративные <br>
+                    мероприятия
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="row">
+                <div class="aqua-group__item bg-item" style="background-image: url(http://via.placeholder.com/300x330)">
+                  <div class="aqua-group__name">
+                    развлекательные <br>
+                    мероприятия
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="row">
+                <div class="aqua-group__item bg-item" style="background-image: url(http://via.placeholder.com/300x330)">
+                  <div class="aqua-group__name">
+                    дополнительные <br>
+                    услуги
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        //= template/seo.html
+      </div>
+      //= template/photo.html
+    </div>
+    <div class="feedback-online feedback-online-event clearfix">
+      <div class="col-lg-6 col-md-5 hidden-sm">
+        <div class="row">
+          <div class="feedback-event-img" style="background-image: url(img/event.jpg)"></div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-7">
+        <div class="row feedback-online__form feedback-event-form">
+          <div class="feedback-online__header">
+            <h2 class="item-title">Заказ мероприятия</h2>
+            <p>
+              Для заказа мероприятия заполните форму
+            </p>
+          </div>
+          <form action="">
+            <div class="form-group clearfix">
+              <div class="feedback-online__label pull-left col-md-6">
+                <div class="row">Как к вам обращаться?</div>
+              </div>
+              <div class="pull-right col-md-6 col-sm-7">
+                <div class="row">
+                  <input type="text" class="form-control form-control--middle" placeholder="Ваше имя?">
+                </div>
+              </div>
+            </div>
+            <div class="form-group clearfix">
+              <div class="feedback-online__label pull-left col-md-6 col-sm-5">
+                <div class="row">Как с вам связаться?*</div>
+              </div>
+              <div class="pull-right col-md-6 col-sm-7">
+                <div class="row">
+                  <input type="text" class="form-control form-control--middle" placeholder="+7 (___) ___-__-__">
+                </div>
+              </div>
+            </div>
+            <div class="form-group clearfix">
+              <div class="feedback-online__label pull-left col-md-6 col-sm-5">
+                <div class="row">Куда отправить подтверждение?</div>
+              </div>
+              <div class="pull-right col-md-6 col-sm-7">
+                <div class="row">
+                  <input type="text" class="form-control form-control--middle" placeholder="E-mail">
+                </div>
+              </div>
+            </div>
+            <div class="form-group clearfix">
+              <div class="feedback-online__label pull-left col-md-6 col-sm-5">
+                <div class="row">Дата мероприятия</div>
+              </div>
+              <div class="pull-right col-md-6 col-sm-7">
+                <div class="row">
+                  <input type="text" id="datepicker" class="form-control form-control--middle">
+                </div>
+              </div>
+            </div>
+            <div class="form-group form-group--submit clearfix">
+              <div class="pull-right col-md-6 col-sm-7">
+                <div class="row">
+                  <button type="submit" class="btn btn--submit">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  //= template/footer.html
+
+
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

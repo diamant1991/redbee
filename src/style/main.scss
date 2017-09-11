@@ -5,6 +5,7 @@
 @import "partials/modal";
 @import "partials/fancybox";
 @import "partials/typography";
+@import "partials/datepicker";
 @import "partials/variable";
 
 body{
@@ -1286,4 +1287,30 @@ img[align="left"]{
 }
 .seo-text{
 	margin-top: 55px;
+}
+.feedback-event-img{
+	height: 520px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+}
+.feedback-online-event{
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.feedback-event-form{
+	width: 585px;
+	padding-left: 45px;
+}
+.ui-datepicker-trigger{
+	position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -8.5px;
+  z-index: 2;
+  cursor: pointer;
+}
+.services-trener{
+	padding-top: 20px;
 }

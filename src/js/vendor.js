@@ -5,3 +5,5 @@
 //= ../../bower_components/owl.carousel/dist/owl.carousel.js
 //= partials/bxslider.js
 //= partials/fancybox.js
+//= partials/datepicker.js
+//= partials/datepickerru.js
