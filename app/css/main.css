@@ -2223,7 +2223,7 @@ img {
     color: #fff;
     width: 100%;
     text-align: right;
-    bottom: 0;
+    top: 55%;
     left: 0;
     padding: 25px; }
   .services__name {
@@ -2660,6 +2660,10 @@ img[align="left"] {
     margin-bottom: 10px; }
   .text-block b {
     color: #333; }
+  .text-block h3 {
+    font-size: 25px;
+    font-family: "AkrobatRegular";
+    color: #333333; }
   .text-block table {
     margin-bottom: 15px; }
     .text-block table td:first-child {
@@ -3080,3 +3084,32 @@ img[align="left"] {
 
 .services-trener {
   padding-top: 20px; }
+
+.event {
+  margin-bottom: 55px;
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.4; }
+  .event .page-text h3 {
+    font-size: 25px; }
+  .event .page-text ul li + li {
+    margin-top: 0; }
+
+.group-text__item {
+  margin-bottom: 25px; }
+
+.group-text h4 {
+  font-size: 22px;
+  text-transform: uppercase; }
+
+.group-text__descr {
+  padding-top: 50px; }
+  .group-text__descr-right {
+    padding-left: 50px; }
+  .group-text__descr-left {
+    padding-right: 50px; }
+
+.services-single {
+  margin-bottom: 35px; }
+  .services-single .services__item {
+    margin-bottom: 30px; }

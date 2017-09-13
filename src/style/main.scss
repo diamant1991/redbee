@@ -235,7 +235,7 @@ img{
 		color: #fff;
 		width: 100%;
 		text-align: right;
-		bottom: 0;
+		top: 55%;
 		left: 0;
 		padding: 25px;
 	}
@@ -795,6 +795,11 @@ img[align="left"]{
 	b{
 		color: #333;
 	}
+	h3{
+		font-size: 25px;
+		font-family: $aregular;
+		color: #333333;
+	}
 	table{
 		margin-bottom: 15px;
 
@@ -1313,4 +1318,47 @@ img[align="left"]{
 }
 .services-trener{
 	padding-top: 20px;
+}
+.event{
+	margin-bottom: 55px;
+	color: #666666;
+	font-size: 15px;
+	line-height: 1.4;
+
+	.page-text{
+		h3{
+			font-size: 25px;
+		}
+		ul{
+			li + li{
+				margin-top: 0;
+			}
+		}
+	}
+}
+.group-text{
+	&__item{
+		margin-bottom: 25px;
+	}
+	h4{
+		font-size: 22px;
+		text-transform: uppercase;
+	}
+	&__descr{
+		padding-top: 50px;
+
+		&-right{
+			padding-left: 50px;
+		}
+		&-left{
+			padding-right: 50px;
+		}
+	}
+}
+.services-single{
+	margin-bottom: 35px;
+
+	.services__item{
+		margin-bottom: 30px;
+	}
 }

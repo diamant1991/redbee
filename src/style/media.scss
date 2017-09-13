@@ -64,11 +64,32 @@
 	.main-slider__text{
 		height: auto;
 	}
+	.group-text__descr{
+		padding-top: 10px;
+	}
 	.product__text__content{
 		width: 325px;
 	}
+	.group-text{
+		&__descr{
+
+			&-right{
+				padding-left: 15px;
+			}
+			&-left{
+				padding-right: 15px;
+			}
+		}
+	}
 	.about-size__text{
 		font-size: 30px;
+	}
+	.event{
+		margin-bottom: 20px;
+		
+		img{
+			margin-bottom: 20px;
+		}
 	}
 	.treners-info__item{
 		margin-bottom: 0;
@@ -149,6 +170,9 @@
 	}
 	.product__text{
 		position: relative;
+	}
+	.aqua{
+		margin-bottom: 30px;
 	}
 	.about-size__content{
 		text-align: center;

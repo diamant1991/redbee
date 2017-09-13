@@ -91,6 +91,24 @@ $('#about-carousel').owlCarousel({
     }
   }
 })
+$('.build-carousel').owlCarousel({
+  loop:true,
+  margin: 30,
+  nav:true,
+  navText: ["<div class='carousel-btn carousel-btn--prev'><i class='fa fa-long-arrow-left'></i><span class='middle'>предыдущие</span></div>", 
+            "<div class='carousel-btn carousel-btn--next'><span class='middle'>следующие</span><i class='fa fa-long-arrow-right'></i></div>"],
+  responsive:{
+    0:{
+        items:1
+    },
+    767:{
+        items:2
+    },
+    1199:{
+        items:3
+    }
+  }
+})
 $('.review__carousel').owlCarousel({
   loop:true,
   margin: 0,
