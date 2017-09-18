@@ -21,6 +21,10 @@
 	.feedback-event-form{
 		width: 560px;
 	}
+	.card__tab,
+	.cards__links{
+		width: 100%;
+	}
 }
 @media(min-width: 992px){
 	.visible-sm{
@@ -393,4 +397,15 @@
 	.aqua-build__name{
 		font-size: 20px;
 	}
+	.cards__header{
+		.schema__floor{
+			width: 100%;
+			text-align: center;
+		}
+		.schema__floor + .schema__floor{
+			margin-left: 0;
+			border-left: 2px solid $red;
+		}
+	}
+	
 }
