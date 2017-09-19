@@ -2249,7 +2249,8 @@ img {
     .feedback__title-regular {
       font-family: "AkrobatRegular"; }
   .feedback__group {
-    width: 22%; }
+    width: 22%;
+    position: relative; }
 
 .form-control {
   display: block;
@@ -3119,6 +3120,15 @@ img[align="left"] {
   .services-single .services__item {
     margin-bottom: 30px; }
 
+.cards-text {
+  margin: 20px 0; }
+
+.cards__info {
+  margin-top: 25px;
+  font-size: 15px;
+  color: #666666;
+  font-family: "NotoSansBold"; }
+
 .cards__links a {
   font-size: 15px;
   color: #333333;
@@ -3156,3 +3166,51 @@ img[align="left"] {
 
 .card-header {
   margin-bottom: 35px; }
+
+.card-price {
+  border-bottom: 1px solid #fafafa;
+  margin-bottom: 40px; }
+  .card-price__item {
+    padding: 15px 0;
+    border-top: 1px solid #fafafa;
+    font-size: 15px;
+    color: #666666; }
+    .card-price__item:hover {
+      background: #fafafa; }
+
+.price-info {
+  font-family: "NotoSansBold";
+  font-size: 15px;
+  color: #333333; }
+
+.select-item {
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  -webkit-appearance: none;
+  background-image: url("../img/angle-down.png");
+  background-position: 95%;
+  background-repeat: no-repeat;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  outline: 0;
+  -ms-appearance: none;
+  appearance: none !important;
+  font-size: 15px;
+  color: #333333;
+  font-family: "NotoSansRegular";
+  border: 1px solid #cdcdcd; }
+
+.select-item::-ms-expand {
+  display: none; }
+
+.schedule-selects {
+  margin-bottom: 30px; }
+
+.schedule-status {
+  background: #f7f7f7;
+  padding: 25px 0;
+  color: #333333;
+  font-family: "NotoSansBold";
+  margin-bottom: 25px; }
