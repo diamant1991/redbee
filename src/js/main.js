@@ -124,6 +124,13 @@ $('.review__carousel').owlCarousel({
 $('.schema__floor').click(function(e) {
   $('.schema__floor').removeClass('active')
   $(this).addClass('active')
+  var idHref = $(this).attr('href');
+  if(idHref == '#cards'){
+    $('.cards__links ').show()
+  }
+  else{
+    $('.cards__links ').hide()
+  }
 });
 
 $.fn.equivalent = function (){

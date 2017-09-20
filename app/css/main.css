@@ -2369,6 +2369,16 @@ img {
     text-align: center; }
   .review__item {
     margin-bottom: 60px; }
+    .review__item:after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      width: 100%;
+      background: #fafafa;
+      height: 1px;
+      margin-top: 15px; }
 
 .carousel-btn {
   text-transform: uppercase;
@@ -2755,6 +2765,10 @@ img[align="left"] {
   font-size: 15px;
   line-height: 1.5;
   color: #666666; }
+  .page-text a {
+    color: #f36666; }
+    .page-text a:hover {
+      text-decoration: underline; }
   .page-text img[align="right"] {
     margin-left: 20px;
     margin-bottom: 10px; }
@@ -2785,7 +2799,8 @@ img[align="left"] {
   .page-text h1 {
     font-size: 35px;
     font-family: "AkrobatBold";
-    color: #2a2323; }
+    color: #2a2323;
+    line-height: 1.1; }
   .page-text h2 {
     font-size: 30px;
     color: #2a2323;
@@ -2793,15 +2808,18 @@ img[align="left"] {
   .page-text h3 {
     font-size: 22px;
     color: #2a2323;
-    font-family: "AkrobatSemiBold"; }
+    font-family: "AkrobatSemiBold";
+    line-height: 1.1; }
   .page-text h4 {
     font-size: 20px;
     font-family: "AkrobatBold";
-    color: #333; }
+    color: #333;
+    line-height: 1.1; }
   .page-text h5 {
     font-size: 15px;
     color: #333;
-    font-family: "NotoSansBold"; }
+    font-family: "NotoSansBold";
+    line-height: 1.1; }
   .page-text table {
     width: 100%; }
     .page-text table thead {
@@ -2835,7 +2853,7 @@ img[align="left"] {
     z-index: 1;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.4); }
+    background: rgba(0, 0, 0, 0.2); }
 
 .treners__descr {
   position: absolute;
@@ -2972,6 +2990,8 @@ img[align="left"] {
     -webkit-transition: 0.5s;
     transition: 0.5s; }
     .aqua-group__item:hover {
+      position: relative;
+      z-index: 2;
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1); }
@@ -2983,7 +3003,7 @@ img[align="left"] {
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.4); }
+      background: rgba(0, 0, 0, 0.2); }
   .aqua-group__name {
     color: #fff;
     font-size: 22px;
@@ -3124,7 +3144,7 @@ img[align="left"] {
   margin: 20px 0; }
 
 .cards__info {
-  margin-top: 25px;
+  margin: 25px 0;
   font-size: 15px;
   color: #666666;
   font-family: "NotoSansBold"; }
@@ -3214,3 +3234,11 @@ img[align="left"] {
   color: #333333;
   font-family: "NotoSansBold";
   margin-bottom: 25px; }
+
+.privacy_policy_info {
+  padding: 10px 0 0 0;
+  font-size: 13px; }
+  .privacy_policy_info a {
+    color: #f36666; }
+    .privacy_policy_info a:hover {
+      text-decoration: underline; }

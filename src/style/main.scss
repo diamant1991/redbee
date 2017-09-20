@@ -430,6 +430,18 @@ img{
 	}
 	&__item{
 		margin-bottom: 60px;
+
+		&:after{
+			content: "";
+			display: block;
+			position: absolute;
+			z-index: 2;
+			left: 0;
+			width: 100%;
+			background: #fafafa;
+			height: 1px;
+			margin-top: 15px;
+		}
 	}
 }
 .carousel-btn{
@@ -917,6 +929,14 @@ img[align="left"]{
 	line-height: 1.5;
 	color: #666666;
 
+	a{
+		color: $red;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
 	img[align="right"]{
 		margin-left: 20px;
 		margin-bottom: 10px;
@@ -957,6 +977,7 @@ img[align="left"]{
 		font-size: 35px;
 		font-family: $abold;
 		color: #2a2323;
+		line-height: 1.1;
 	}
 	h2{
 		font-size: 30px;
@@ -967,16 +988,19 @@ img[align="left"]{
 		font-size: 22px;
 		color: #2a2323;
 		font-family: $asemibold;
+		line-height: 1.1;
 	}
 	h4{
 		font-size: 20px;
 		font-family: $abold;
 		color: #333;
+		line-height: 1.1;
 	}
 	h5{
 		font-size: 15px;
 		color: #333;
 		font-family: $bold;
+		line-height: 1.1;
 	}
 	table{
 		width: 100%;
@@ -1022,7 +1046,7 @@ img[align="left"]{
 			z-index: 1;
 			left: 0;
 			top: 0;
-			background: rgba(0,0,0,0.4);
+			background: rgba(0,0,0,0.2);
 		}
 	}
 	&__descr{
@@ -1185,6 +1209,8 @@ img[align="left"]{
 			transition: 0.5s;
 
 			&:hover{
+				position: relative;
+				z-index: 2;
 				transform: scale(1.1);
 			}
 
@@ -1196,7 +1222,7 @@ img[align="left"]{
 			  left: 0;
 			  width: 100%;
 			  height: 100%;
-			  background: rgba(0,0,0,0.4);
+			  background: rgba(0,0,0,0.2);
 			}
 		}
 		&__name{
@@ -1375,7 +1401,7 @@ img[align="left"]{
 		margin: 20px 0;
 	}
 	&__info{
-		margin-top: 25px;
+		margin: 25px 0;
 		font-size: 15px;
 		color: #666666;
 		font-family: $bold;
@@ -1483,4 +1509,16 @@ img[align="left"]{
 	color: #333333;
 	font-family: $bold;
 	margin-bottom: 25px;
+}
+.privacy_policy_info{
+	padding: 10px 0 0 0;
+	font-size: 13px;
+
+  a{
+  	color: $red;
+
+  	&:hover{
+  		text-decoration: underline;
+  	}
+  }
 }
